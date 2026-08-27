@@ -1,0 +1,89 @@
+/* ============================================================
+   GALLERY — Staggered scrolling image rows on hero
+   ============================================================ */
+
+.hero-gallery {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 0;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  will-change: transform;
+}
+
+.gallery-row img {
+  height: 180px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.72;
+  transition: opacity 0.4s;
+}
+
+.gallery-row img:hover {
+  opacity: 0.92;
+}
+
+/* ── Row 1: scroll left, speed 1x ── */
+.gallery-row--1 {
+  animation: scrollLeft 50s linear infinite;
+}
+
+/* ── Row 2: scroll right, speed 0.7x (slower = longer duration) ── */
+.gallery-row--2 {
+  animation: scrollRight 70s linear infinite;
+}
+
+/* ── Row 3: scroll left, speed 0.5x ── */
+.gallery-row--3 {
+  animation: scrollLeft 90s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Pause on hover */
+.gallery-row:hover {
+  animation-play-state: paused;
+}
+
+/* ── Overlay on top of gallery ── */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8,12,18,0.50) 0%,
+    rgba(8,12,18,0.35) 50%,
+    rgba(8,12,18,0.55) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .gallery-row img {
+    height: 120px;
+  }
+  .gallery-row { gap: 10px; }
+  .hero-gallery { gap: 10px; padding: 20px 0; }
+}

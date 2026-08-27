@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jingcheng Cao — Mechanical Engineering × Digital Business">
+<title>Jingcheng Cao</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/ambient.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/expand.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- ============================================================
+     AMBIENT LIGHT ORBS (hero only, controlled by JS)
+     ============================================================ -->
+<div class="ambient-container active" id="ambientContainer">
+  <div class="ambient-orb ambient-orb--1" data-parallax="0.03"></div>
+  <div class="ambient-orb ambient-orb--2" data-parallax="0.05"></div>
+  <div class="ambient-orb ambient-orb--3" data-parallax="0.04"></div>
+  <div class="ambient-orb ambient-orb--4" data-parallax="0.06"></div>
+</div>
+
+<!-- ============================================================
+     SECTION 1 — HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+
+  <!-- Staggered scrolling image gallery -->
+  <div class="hero-gallery" id="heroGallery">
+    <!-- Row 1: left scroll, fast -->
+    <div class="gallery-row gallery-row--1" id="galleryRow1"></div>
+    <!-- Row 2: right scroll, medium -->
+    <div class="gallery-row gallery-row--2" id="galleryRow2"></div>
+    <!-- Row 3: left scroll, slow -->
+    <div class="gallery-row gallery-row--3" id="galleryRow3"></div>
+  </div>
+
+  <!-- Dark overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Name card -->
+  <div class="wrapper" style="text-align:center;">
+    <div class="hero-card hero-card-entrance" id="heroCard">
+      <h1 class="hero-name">Jingcheng Cao</h1>
+      <p class="hero-subtitle">Mechanical Engineering × Digital Business</p>
+    </div>
+    <div class="hero-scroll-hint"><span></span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 2 — EDUCATION
+     ============================================================ -->
+<section id="education">
+  <div class="wrapper">
+    <p class="section-label reveal">Education</p>
+    <h2 class="section-title reveal">Education</h2>
+    <div class="edu-grid">
+      <div class="glass edu-card edu-card--zjui reveal-left">
+        <p class="edu-school">Zhejiang University–University of Illinois Urbana-Champaign Institute (ZJUI)</p>
+        <p class="edu-degree">ZJUI · B.Eng. Mechanical Engineering · Expected graduation 2028</p>
+        <p class="edu-highlight">GPA 3.74 / 4.2</p>
+        <p class="edu-detail">
+          Dual-degree program: B.Eng. from ZJU + B.S. from UIUC<br>Fully English-taught environment
+        </p>
+        <div class="edu-tags">
+          <span class="edu-tag">Statics</span>
+          <span class="edu-tag">Dynamics</span>
+          <span class="edu-tag">Thermodynamics</span>
+          <span class="edu-tag">Mechanics of Materials</span>
+          <span class="edu-tag">CAD / Engineering Drawing</span>
+        </div>
+      </div>
+      <div class="glass edu-card edu-card--zibs reveal-right">
+        <p class="edu-school">Zhejiang University International Business School (ZIBS)</p>
+        <p class="edu-degree">ZIBS · Digital Intelligence Organization Micro-minor · Sep 2025 – Present</p>
+        <p class="edu-highlight edu-highlight--purple">Interdisciplinary</p>
+        <div class="edu-tags">
+          <span class="edu-tag">Social Media Marketing</span>
+          <span class="edu-tag">Technology &amp; Organization</span>
+          <span class="edu-tag">Innovation Strategy Management</span>
+          <span class="edu-tag">Digital Intelligence Operations</span>
+          <span class="edu-tag">Digital Intelligence Leadership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3 — EXPERIENCE TIMELINE
+     ============================================================ -->
+<section id="experience">
+  <div class="wrapper">
+    <p class="section-label reveal">Experience</p>
+    <h2 class="section-title reveal">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <!-- 2024.10–2025.6 · Student Union -->
+      <div class="timeline-item timeline-item--left">
+        <div class="tl-content">
+          <div class="glass timeline-card reveal-left">
+            <p class="tl-date">Oct 2024 – Jun 2025</p>
+            <p class="tl-title">Student Union Officer</p>
+            <p class="tl-subtitle">ZJUI Student Union</p>
+            <p class="tl-desc">Helped plan and organize large campus events including the welcome gala, lawn music festival, and club carnival, developing cross-department communication and event coordination skills.</p>
+          </div>
+        </div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-spacer"></div>
+      </div>
+
+      <!-- 2025 · Innovation Competition -->
+      <div class="timeline-item timeline-item--right">
+        <div class="tl-spacer"></div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-content">
+          <div class="glass timeline-card reveal-right">
+            <p class="tl-date">2025</p>
+            <p class="tl-title">China International College Students’ Innovation Competition</p>
+            <p class="tl-subtitle">Silver Award · Singapore Regional</p>
+            <p class="tl-desc">Participated in innovation project design, led technical proposal writing and result presentation, and won a Silver Award at the Singapore regional round.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2025.6–7 · Robot Research -->
+      <div class="timeline-item timeline-item--left">
+        <div class="tl-content">
+          <div class="glass timeline-card reveal-left">
+            <p class="tl-date">Jun – Jul 2025</p>
+            <p class="tl-title">Humanoid Robot Design for Underwater Operation</p>
+            <p class="tl-subtitle">Summer Research · Outstanding Summer Research Poster Award</p>
+            <p class="tl-desc">Contributed to mechanical structure design, using Fusion 360 for kinematic simulation and structural optimization; received the Outstanding Summer Research Poster Award.</p>
+          </div>
+        </div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-spacer"></div>
+      </div>
+
+      <!-- 2025.7–8 · Internship -->
+      <div class="timeline-item timeline-item--right">
+        <div class="tl-spacer"></div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-content">
+          <div class="glass timeline-card timeline-card--featured reveal-right">
+            <p class="tl-date">Jul – Aug 2025</p>
+            <p class="tl-title">Jiangsu Tianming Machinery Co., Ltd.</p>
+            <p class="tl-subtitle">Engineering Assistant · TM-11 Turbojet Engine</p>
+            <p class="tl-desc">Participated in the full engine development cycle—design optimization, component assembly, and ground testing; produced 3D models and engineering drawings with SolidWorks; assisted in test-data collection and performance analysis.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2025 Fall · DFM -->
+      <div class="timeline-item timeline-item--left">
+        <div class="tl-content">
+          <div class="glass timeline-card reveal-left">
+            <p class="tl-date">Fall Semester 2025</p>
+            <p class="tl-title">Design for Manufacturability (DFM) Course Project</p>
+            <p class="tl-subtitle">Team Lead · Top-Ranked Project</p>
+            <p class="tl-desc">Led the team from concept design to digital modeling with SolidWorks and Fusion 360, produced a physical prototype via 3D printing, and ranked first among all course teams.</p>
+          </div>
+        </div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-spacer"></div>
+      </div>
+
+      <!-- 2026.1 · UN Geneva -->
+      <div class="timeline-item timeline-item--right">
+        <div class="tl-spacer"></div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-content">
+          <div class="glass timeline-card timeline-card--featured reveal-right">
+            <p class="tl-date">Jan 2026</p>
+            <p class="tl-title">UN Headquarters Geneva Field Exchange Program</p>
+            <p class="tl-subtitle">Outstanding Delegate</p>
+            <p class="tl-desc">Joined the Zhejiang University youth delegation on a field exchange visit to the UN headquarters in Geneva and received the “Outstanding Delegate” honor.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2026.3–6 · Lab Assistant -->
+      <div class="timeline-item timeline-item--left">
+        <div class="tl-content">
+          <div class="glass timeline-card reveal-left">
+            <p class="tl-date">Mar 2026 – Jun 2026</p>
+            <p class="tl-title">Innovation Lab Assistant</p>
+            <p class="tl-subtitle">ZJUI</p>
+            <p class="tl-desc">Managed daily operation, maintenance, and training for the lab’s 3D printers and laser cutters, serving 50+ users in total.</p>
+          </div>
+        </div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-spacer"></div>
+      </div>
+
+      <!-- 2026.7–8 · Linde APAC Internship -->
+      <div class="timeline-item timeline-item--right">
+        <div class="tl-spacer"></div>
+        <div class="dot-col"><div class="timeline-dot"></div></div>
+        <div class="tl-content">
+          <div class="glass timeline-card timeline-card--featured reveal-right">
+            <p class="tl-date">Jul – Aug 2026</p>
+            <p class="tl-title">Linde APAC</p>
+            <p class="tl-subtitle">Commercial Department Intern</p>
+            <p class="tl-desc">Supported internal digitalization initiatives, helped build a contract-review agent, and produced a compressor market research report.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 4 — SKILLS & LANGUAGES
+     ============================================================ -->
+<section id="skills">
+  <div class="wrapper">
+    <p class="section-label reveal">Skills &amp; Languages</p>
+    <h2 class="section-title reveal">Skills &amp; Languages</h2>
+    <div class="skills-layout">
+
+      <div class="skill-category reveal">
+        <h3>Engineering Design &amp; Manufacturing</h3>
+        <div class="skill-tags">
+          <span class="glass skill-pill">SolidWorks</span>
+          <span class="glass skill-pill">Fusion 360</span>
+          <span class="glass skill-pill">3D Printing (FDM/SLA)</span>
+          <span class="glass skill-pill">Laser Cutting</span>
+          <span class="glass skill-pill">CAD / Engineering Drawing</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3>Programming &amp; Data</h3>
+        <div class="skill-tags">
+          <span class="glass skill-pill">MATLAB</span>
+          <span class="glass skill-pill">Python</span>
+          <span class="glass skill-pill">Data Analysis &amp; Visualization</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3>Languages</h3>
+        <div class="lang-scores">
+          <div class="lang-score">
+            <p class="score-number" data-count="102">0</p>
+            <p class="score-label">TOEFL iBT</p>
+          </div>
+          <div class="lang-score">
+            <p class="score-number" data-count="565">0</p>
+            <p class="score-label">CET-6</p>
+          </div>
+          <div class="lang-score">
+            <p class="score-number" style="
+              background: linear-gradient(180deg, var(--text-primary) 0%, var(--accent-purple) 100%);
+              -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            ">Native</p>
+            <p class="score-label">Chinese</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5 — VISION
+     ============================================================ -->
+<section class="vision" id="vision">
+  <div class="wrapper vision-container">
+    <div class="glass glass--deep vision-glass reveal">
+      <p class="vision-text">
+        Starting from the technical depth of <em>Mechanical Engineering</em><br>
+        Understanding markets and organizations through a <em>business lens</em><br>
+        Ultimately moving toward <em>Product Management</em>—
+      </p>
+      <p class="vision-highlight">
+        Becoming the person who translates technology into value.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6 — CONTACT
+     ============================================================ -->
+<section class="contact-section" id="contact">
+  <div class="wrapper">
+    <div class="contact-grid">
+      <div class="glass contact-card reveal">
+        <div class="contact-icon">&#x1F4DE;</div>
+        <p class="contact-label">Phone</p>
+        <p class="contact-value">178 4900 3999</p>
+      </div>
+      <div class="glass contact-card reveal">
+        <div class="contact-icon">&#x2709;&#xFE0F;</div>
+        <p class="contact-label">Email</p>
+        <p class="contact-value">jingcheng.24@intl.zju.edu.cn</p>
+      </div>
+      <div class="glass contact-card reveal">
+        <div class="contact-icon">&#x1F4CD;</div>
+        <p class="contact-label">Location</p>
+        <p class="contact-value">Hangzhou</p>
+      </div>
+    </div>
+    <p class="footer-note">&copy; 2026 Jingcheng Cao</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="js/gallery.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script src="js/countUp.js"></script>
+<script src="js/heroTransition.js"></script>
+<script src="js/expandCard.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
