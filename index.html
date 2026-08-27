@@ -4,15 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Jingcheng Cao — Mechanical Engineering × Digital Business">
-<title>Jingcheng Cao</title>
+<title data-i18n="pageTitle">Jingcheng Cao</title>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/ambient.css">
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/gallery.css">
 <link rel="stylesheet" href="css/expand.css">
 <link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/i18n.css">
 </head>
 <body>
+
+<!-- ============================================================
+     LANGUAGE SWITCHER
+     ============================================================ -->
+<div class="lang-switch" id="langSwitch" role="group" aria-label="Language / 语言">
+  <button type="button" class="lang-btn" data-lang="en">EN</button>
+  <span class="lang-divider" aria-hidden="true">/</span>
+  <button type="button" class="lang-btn" data-lang="zh">中文</button>
+</div>
 
 <!-- ============================================================
      AMBIENT LIGHT ORBS (hero only, controlled by JS)
@@ -45,8 +55,8 @@
   <!-- Name card -->
   <div class="wrapper" style="text-align:center;">
     <div class="hero-card hero-card-entrance" id="heroCard">
-      <h1 class="hero-name">Jingcheng Cao</h1>
-      <p class="hero-subtitle">Mechanical Engineering × Digital Business</p>
+      <h1 class="hero-name" data-i18n="heroName">Jingcheng Cao</h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">Mechanical Engineering × Digital Business</p>
     </div>
     <div class="hero-scroll-hint"><span></span></div>
   </div>
@@ -57,34 +67,34 @@
      ============================================================ -->
 <section id="education">
   <div class="wrapper">
-    <p class="section-label reveal">Education</p>
-    <h2 class="section-title reveal">Education</h2>
+    <p class="section-label reveal" data-i18n="eduTitle">Education</p>
+    <h2 class="section-title reveal" data-i18n="eduTitle">Education</h2>
     <div class="edu-grid">
       <div class="glass edu-card edu-card--zjui reveal-left">
-        <p class="edu-school">Zhejiang University–University of Illinois Urbana-Champaign Institute (ZJUI)</p>
-        <p class="edu-degree">ZJUI · B.Eng. Mechanical Engineering · Expected graduation 2028</p>
+        <p class="edu-school" data-i18n="eduSchool1">Zhejiang University–University of Illinois Urbana-Champaign Institute (ZJUI)</p>
+        <p class="edu-degree" data-i18n="eduDegree1">ZJUI · B.Eng. Mechanical Engineering · Expected graduation 2028</p>
         <p class="edu-highlight">GPA 3.74 / 4.2</p>
-        <p class="edu-detail">
+        <p class="edu-detail" data-i18n-html="eduDetail1">
           Dual-degree program: B.Eng. from ZJU + B.S. from UIUC<br>Fully English-taught environment
         </p>
         <div class="edu-tags">
-          <span class="edu-tag">Statics</span>
-          <span class="edu-tag">Dynamics</span>
-          <span class="edu-tag">Thermodynamics</span>
-          <span class="edu-tag">Mechanics of Materials</span>
-          <span class="edu-tag">CAD / Engineering Drawing</span>
+          <span class="edu-tag" data-i18n="eduTag1_1">Statics</span>
+          <span class="edu-tag" data-i18n="eduTag1_2">Dynamics</span>
+          <span class="edu-tag" data-i18n="eduTag1_3">Thermodynamics</span>
+          <span class="edu-tag" data-i18n="eduTag1_4">Mechanics of Materials</span>
+          <span class="edu-tag" data-i18n="eduTag1_5">CAD / Engineering Drawing</span>
         </div>
       </div>
       <div class="glass edu-card edu-card--zibs reveal-right">
-        <p class="edu-school">Zhejiang University International Business School (ZIBS)</p>
-        <p class="edu-degree">ZIBS · Digital Intelligence Organization Micro-minor · Sep 2025 – Present</p>
-        <p class="edu-highlight edu-highlight--purple">Interdisciplinary</p>
+        <p class="edu-school" data-i18n="eduSchool2">Zhejiang University International Business School (ZIBS)</p>
+        <p class="edu-degree" data-i18n="eduDegree2">ZIBS · Digital Intelligence Organization Micro-minor · Sep 2025 – Present</p>
+        <p class="edu-highlight edu-highlight--purple" data-i18n="eduHighlight2">Interdisciplinary</p>
         <div class="edu-tags">
-          <span class="edu-tag">Social Media Marketing</span>
-          <span class="edu-tag">Technology &amp; Organization</span>
-          <span class="edu-tag">Innovation Strategy Management</span>
-          <span class="edu-tag">Digital Intelligence Operations</span>
-          <span class="edu-tag">Digital Intelligence Leadership</span>
+          <span class="edu-tag" data-i18n="eduTag2_1">Social Media Marketing</span>
+          <span class="edu-tag" data-i18n="eduTag2_2">Technology &amp; Organization</span>
+          <span class="edu-tag" data-i18n="eduTag2_3">Innovation Strategy Management</span>
+          <span class="edu-tag" data-i18n="eduTag2_4">Digital Intelligence Operations</span>
+          <span class="edu-tag" data-i18n="eduTag2_5">Digital Intelligence Leadership</span>
         </div>
       </div>
     </div>
@@ -96,19 +106,19 @@
      ============================================================ -->
 <section id="experience">
   <div class="wrapper">
-    <p class="section-label reveal">Experience</p>
-    <h2 class="section-title reveal">Experience</h2>
+    <p class="section-label reveal" data-i18n="expTitle">Experience</p>
+    <h2 class="section-title reveal" data-i18n="expTitle">Experience</h2>
     <div class="timeline">
       <div class="timeline-line"></div>
 
       <!-- 2024.10–2025.6 · Student Union -->
       <div class="timeline-item timeline-item--left">
         <div class="tl-content">
-          <div class="glass timeline-card reveal-left">
-            <p class="tl-date">Oct 2024 – Jun 2025</p>
-            <p class="tl-title">Student Union Officer</p>
-            <p class="tl-subtitle">ZJUI Student Union</p>
-            <p class="tl-desc">Helped plan and organize large campus events including the welcome gala, lawn music festival, and club carnival, developing cross-department communication and event coordination skills.</p>
+          <div class="glass timeline-card reveal-left" data-detail="student-union">
+            <p class="tl-date" data-i18n="exp1Date">Oct 2024 – Jun 2025</p>
+            <p class="tl-title" data-i18n="exp1Title">Student Union Officer</p>
+            <p class="tl-subtitle" data-i18n="exp1Subtitle">ZJUI Student Union</p>
+            <p class="tl-desc" data-i18n="exp1Desc">Helped plan and organize large campus events including the welcome gala, lawn music festival, and club carnival, developing cross-department communication and event coordination skills.</p>
           </div>
         </div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
@@ -120,11 +130,11 @@
         <div class="tl-spacer"></div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
         <div class="tl-content">
-          <div class="glass timeline-card reveal-right">
-            <p class="tl-date">2025</p>
-            <p class="tl-title">China International College Students’ Innovation Competition</p>
-            <p class="tl-subtitle">Silver Award · Singapore Regional</p>
-            <p class="tl-desc">Participated in innovation project design, led technical proposal writing and result presentation, and won a Silver Award at the Singapore regional round.</p>
+          <div class="glass timeline-card reveal-right" data-detail="innovation-competition">
+            <p class="tl-date" data-i18n="exp2Date">2025</p>
+            <p class="tl-title" data-i18n="exp2Title">China International College Students’ Innovation Competition</p>
+            <p class="tl-subtitle" data-i18n="exp2Subtitle">Silver Award · Singapore Regional</p>
+            <p class="tl-desc" data-i18n="exp2Desc">Participated in innovation project design, led technical proposal writing and result presentation, and won a Silver Award at the Singapore regional round.</p>
           </div>
         </div>
       </div>
@@ -132,11 +142,11 @@
       <!-- 2025.6–7 · Robot Research -->
       <div class="timeline-item timeline-item--left">
         <div class="tl-content">
-          <div class="glass timeline-card reveal-left">
-            <p class="tl-date">Jun – Jul 2025</p>
-            <p class="tl-title">Humanoid Robot Design for Underwater Operation</p>
-            <p class="tl-subtitle">Summer Research · Outstanding Summer Research Poster Award</p>
-            <p class="tl-desc">Contributed to mechanical structure design, using Fusion 360 for kinematic simulation and structural optimization; received the Outstanding Summer Research Poster Award.</p>
+          <div class="glass timeline-card reveal-left" data-detail="robot-research">
+            <p class="tl-date" data-i18n="exp3Date">Jun – Jul 2025</p>
+            <p class="tl-title" data-i18n="exp3Title">Humanoid Robot Design for Underwater Operation</p>
+            <p class="tl-subtitle" data-i18n="exp3Subtitle">Summer Research · Outstanding Summer Research Poster Award</p>
+            <p class="tl-desc" data-i18n="exp3Desc">Contributed to mechanical structure design, using Fusion 360 for kinematic simulation and structural optimization; received the Outstanding Summer Research Poster Award.</p>
           </div>
         </div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
@@ -148,11 +158,11 @@
         <div class="tl-spacer"></div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
         <div class="tl-content">
-          <div class="glass timeline-card timeline-card--featured reveal-right">
-            <p class="tl-date">Jul – Aug 2025</p>
-            <p class="tl-title">Jiangsu Tianming Machinery Co., Ltd.</p>
-            <p class="tl-subtitle">Engineering Assistant · TM-11 Turbojet Engine</p>
-            <p class="tl-desc">Participated in the full engine development cycle—design optimization, component assembly, and ground testing; produced 3D models and engineering drawings with SolidWorks; assisted in test-data collection and performance analysis.</p>
+          <div class="glass timeline-card timeline-card--featured reveal-right" data-detail="jiangsu-tianming">
+            <p class="tl-date" data-i18n="exp4Date">Jul – Aug 2025</p>
+            <p class="tl-title" data-i18n="exp4Title">Jiangsu Tianming Machinery Co., Ltd.</p>
+            <p class="tl-subtitle" data-i18n="exp4Subtitle">Engineering Assistant · TM-11 Turbojet Engine</p>
+            <p class="tl-desc" data-i18n="exp4Desc">Participated in the full engine development cycle—design optimization, component assembly, and ground testing; produced 3D models and engineering drawings with SolidWorks; assisted in test-data collection and performance analysis.</p>
           </div>
         </div>
       </div>
@@ -160,11 +170,11 @@
       <!-- 2025 Fall · DFM -->
       <div class="timeline-item timeline-item--left">
         <div class="tl-content">
-          <div class="glass timeline-card reveal-left">
-            <p class="tl-date">Fall Semester 2025</p>
-            <p class="tl-title">Design for Manufacturability (DFM) Course Project</p>
-            <p class="tl-subtitle">Team Lead · Top-Ranked Project</p>
-            <p class="tl-desc">Led the team from concept design to digital modeling with SolidWorks and Fusion 360, produced a physical prototype via 3D printing, and ranked first among all course teams.</p>
+          <div class="glass timeline-card reveal-left" data-detail="dfm">
+            <p class="tl-date" data-i18n="exp5Date">Fall Semester 2025</p>
+            <p class="tl-title" data-i18n="exp5Title">Design for Manufacturability (DFM) Course Project</p>
+            <p class="tl-subtitle" data-i18n="exp5Subtitle">Team Lead · Top-Ranked Project</p>
+            <p class="tl-desc" data-i18n="exp5Desc">Led the team from concept design to digital modeling with SolidWorks and Fusion 360, produced a physical prototype via 3D printing, and ranked first among all course teams.</p>
           </div>
         </div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
@@ -176,11 +186,11 @@
         <div class="tl-spacer"></div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
         <div class="tl-content">
-          <div class="glass timeline-card timeline-card--featured reveal-right">
-            <p class="tl-date">Jan 2026</p>
-            <p class="tl-title">UN Headquarters Geneva Field Exchange Program</p>
-            <p class="tl-subtitle">Outstanding Delegate</p>
-            <p class="tl-desc">Joined the Zhejiang University youth delegation on a field exchange visit to the UN headquarters in Geneva and received the “Outstanding Delegate” honor.</p>
+          <div class="glass timeline-card timeline-card--featured reveal-right" data-detail="un-geneva">
+            <p class="tl-date" data-i18n="exp6Date">Jan 2026</p>
+            <p class="tl-title" data-i18n="exp6Title">UN Headquarters Geneva Field Exchange Program</p>
+            <p class="tl-subtitle" data-i18n="exp6Subtitle">Outstanding Delegate</p>
+            <p class="tl-desc" data-i18n="exp6Desc">Joined the Zhejiang University youth delegation on a field exchange visit to the UN headquarters in Geneva and received the “Outstanding Delegate” honor.</p>
           </div>
         </div>
       </div>
@@ -188,11 +198,11 @@
       <!-- 2026.3–6 · Lab Assistant -->
       <div class="timeline-item timeline-item--left">
         <div class="tl-content">
-          <div class="glass timeline-card reveal-left">
-            <p class="tl-date">Mar 2026 – Jun 2026</p>
-            <p class="tl-title">Innovation Lab Assistant</p>
+          <div class="glass timeline-card reveal-left" data-detail="lab-assistant">
+            <p class="tl-date" data-i18n="exp7Date">Mar 2026 – Jun 2026</p>
+            <p class="tl-title" data-i18n="exp7Title">Innovation Lab Assistant</p>
             <p class="tl-subtitle">ZJUI</p>
-            <p class="tl-desc">Managed daily operation, maintenance, and training for the lab’s 3D printers and laser cutters, serving 50+ users in total.</p>
+            <p class="tl-desc" data-i18n="exp7Desc">Managed daily operation, maintenance, and training for the lab’s 3D printers and laser cutters, serving 50+ users in total.</p>
           </div>
         </div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
@@ -204,11 +214,11 @@
         <div class="tl-spacer"></div>
         <div class="dot-col"><div class="timeline-dot"></div></div>
         <div class="tl-content">
-          <div class="glass timeline-card timeline-card--featured reveal-right">
-            <p class="tl-date">Jul – Aug 2026</p>
-            <p class="tl-title">Linde APAC</p>
-            <p class="tl-subtitle">Commercial Department Intern</p>
-            <p class="tl-desc">Supported internal digitalization initiatives, helped build a contract-review agent, and produced a compressor market research report.</p>
+          <div class="glass timeline-card timeline-card--featured reveal-right" data-detail="linde-apac">
+            <p class="tl-date" data-i18n="exp8Date">Jul – Aug 2026</p>
+            <p class="tl-title" data-i18n="exp8Title">Linde APAC</p>
+            <p class="tl-subtitle" data-i18n="exp8Subtitle">Commercial Department Intern</p>
+            <p class="tl-desc" data-i18n="exp8Desc">Supported internal digitalization initiatives, helped build a Microsoft 365 Copilot contract-review agent, and produced a compressor market research report.</p>
           </div>
         </div>
       </div>
@@ -222,32 +232,32 @@
      ============================================================ -->
 <section id="skills">
   <div class="wrapper">
-    <p class="section-label reveal">Skills &amp; Languages</p>
-    <h2 class="section-title reveal">Skills &amp; Languages</h2>
+    <p class="section-label reveal" data-i18n="skillTitle">Skills &amp; Languages</p>
+    <h2 class="section-title reveal" data-i18n="skillTitle">Skills &amp; Languages</h2>
     <div class="skills-layout">
 
       <div class="skill-category reveal">
-        <h3>Engineering Design &amp; Manufacturing</h3>
+        <h3 data-i18n="skillH1">Engineering Design &amp; Manufacturing</h3>
         <div class="skill-tags">
           <span class="glass skill-pill">SolidWorks</span>
           <span class="glass skill-pill">Fusion 360</span>
-          <span class="glass skill-pill">3D Printing (FDM/SLA)</span>
-          <span class="glass skill-pill">Laser Cutting</span>
-          <span class="glass skill-pill">CAD / Engineering Drawing</span>
+          <span class="glass skill-pill" data-i18n="skillTag1_3">3D Printing (FDM/SLA)</span>
+          <span class="glass skill-pill" data-i18n="skillTag1_4">Laser Cutting</span>
+          <span class="glass skill-pill" data-i18n="skillTag1_5">CAD / Engineering Drawing</span>
         </div>
       </div>
 
       <div class="skill-category reveal">
-        <h3>Programming &amp; Data</h3>
+        <h3 data-i18n="skillH2">Programming &amp; Data</h3>
         <div class="skill-tags">
           <span class="glass skill-pill">MATLAB</span>
           <span class="glass skill-pill">Python</span>
-          <span class="glass skill-pill">Data Analysis &amp; Visualization</span>
+          <span class="glass skill-pill" data-i18n="skillTag2_3">Data Analysis &amp; Visualization</span>
         </div>
       </div>
 
       <div class="skill-category reveal">
-        <h3>Languages</h3>
+        <h3 data-i18n="skillH3">Languages</h3>
         <div class="lang-scores">
           <div class="lang-score">
             <p class="score-number" data-count="102">0</p>
@@ -261,8 +271,8 @@
             <p class="score-number" style="
               background: linear-gradient(180deg, var(--text-primary) 0%, var(--accent-purple) 100%);
               -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-            ">Native</p>
-            <p class="score-label">Chinese</p>
+            " data-i18n="langChineseNumber">Native</p>
+            <p class="score-label" data-i18n="langChineseLabel">Chinese</p>
           </div>
         </div>
       </div>
@@ -277,12 +287,12 @@
 <section class="vision" id="vision">
   <div class="wrapper vision-container">
     <div class="glass glass--deep vision-glass reveal">
-      <p class="vision-text">
+      <p class="vision-text" data-i18n-html="visionText">
         Starting from the technical depth of <em>Mechanical Engineering</em><br>
         Understanding markets and organizations through a <em>business lens</em><br>
         Ultimately moving toward <em>Product Management</em>—
       </p>
-      <p class="vision-highlight">
+      <p class="vision-highlight" data-i18n="visionHighlight">
         Becoming the person who translates technology into value.
       </p>
     </div>
@@ -297,21 +307,21 @@
     <div class="contact-grid">
       <div class="glass contact-card reveal">
         <div class="contact-icon">&#x1F4DE;</div>
-        <p class="contact-label">Phone</p>
+        <p class="contact-label" data-i18n="contactLabelPhone">Phone</p>
         <p class="contact-value">178 4900 3999</p>
       </div>
       <div class="glass contact-card reveal">
         <div class="contact-icon">&#x2709;&#xFE0F;</div>
-        <p class="contact-label">Email</p>
+        <p class="contact-label" data-i18n="contactLabelEmail">Email</p>
         <p class="contact-value">jingcheng.24@intl.zju.edu.cn</p>
       </div>
       <div class="glass contact-card reveal">
         <div class="contact-icon">&#x1F4CD;</div>
-        <p class="contact-label">Location</p>
-        <p class="contact-value">Hangzhou</p>
+        <p class="contact-label" data-i18n="contactLabelLocation">Location</p>
+        <p class="contact-value" data-i18n="contactValueLocation">Hangzhou</p>
       </div>
     </div>
-    <p class="footer-note">&copy; 2026 Jingcheng Cao</p>
+    <p class="footer-note" data-i18n="footerNote">&copy; 2026 Jingcheng Cao</p>
   </div>
 </section>
 
@@ -323,6 +333,7 @@
 <script src="js/scrollReveal.js"></script>
 <script src="js/countUp.js"></script>
 <script src="js/heroTransition.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/expandCard.js"></script>
 <script src="js/main.js"></script>
 
