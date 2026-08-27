@@ -114,6 +114,7 @@
 
     'un-geneva': {
       icon: '🇺🇳',
+      flag: 'assets/un-flag.svg',
       en: {
         title: 'UN Headquarters Geneva Field Exchange Program',
         subtitle: 'Outstanding Delegate · Jan 2026',
@@ -198,7 +199,12 @@
     if (!entry) return;
     var lang = (window.currentLang === 'zh') ? 'zh' : 'en';
     var d = entry[lang] || entry.en;
-    modal.querySelector('.card-modal-icon').textContent = entry.icon;
+    var iconEl = modal.querySelector('.card-modal-icon');
+    if (entry.flag) {
+      iconEl.innerHTML = '<img src="' + entry.flag + '" alt="United Nations flag">';
+    } else {
+      iconEl.textContent = entry.icon;
+    }
     modal.querySelector('.card-modal-title').textContent = d.title;
     modal.querySelector('.card-modal-subtitle').textContent = d.subtitle;
     modal.querySelector('.card-modal-body').innerHTML = d.body;
