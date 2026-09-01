@@ -104,11 +104,12 @@
 
 /* ── Title ──────────────────────────────────────────── */
 .card-modal-title {
-  font-size: 26px;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
   color: var(--text-primary);
   margin-bottom: 6px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 /* ── Subtitle ───────────────────────────────────────── */

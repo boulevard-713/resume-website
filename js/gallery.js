@@ -23,15 +23,13 @@
 
   var shuffled = shuffle(imageIds);
 
-  // Distribute evenly: 8 + 8 + 7 = 23
-  var row1 = shuffled.slice(0, 8);
-  var row2 = shuffled.slice(8, 16);
-  var row3 = shuffled.slice(16);
+  // Distribute across 2 rows: 12 + 11 = 23
+  var row1 = shuffled.slice(0, 12);
+  var row2 = shuffled.slice(12);
 
   var rows = [
     { el: document.getElementById('galleryRow1'), ids: row1 },
-    { el: document.getElementById('galleryRow2'), ids: row2 },
-    { el: document.getElementById('galleryRow3'), ids: row3 }
+    { el: document.getElementById('galleryRow2'), ids: row2 }
   ];
 
   rows.forEach(function(row) {

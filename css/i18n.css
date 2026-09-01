@@ -39,8 +39,8 @@
 }
 
 .lang-btn.active {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.10);
+  color: #1a1206;
+  background: var(--signal);
 }
 
 .lang-divider {

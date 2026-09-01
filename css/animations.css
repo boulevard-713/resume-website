@@ -5,10 +5,10 @@
 /* ── Reveal on scroll ───────────────────────────────── */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(16px);
   transition:
-    opacity 0.9s var(--ease-smooth),
-    transform 0.9s var(--ease-smooth);
+    opacity 0.55s var(--ease-smooth),
+    transform 0.55s var(--ease-smooth);
 }
 
 .reveal.is-visible {
@@ -18,10 +18,10 @@
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-14px);
   transition:
-    opacity 0.8s var(--ease-smooth),
-    transform 0.8s var(--ease-smooth);
+    opacity 0.5s var(--ease-smooth),
+    transform 0.5s var(--ease-smooth);
 }
 
 .reveal-left.is-visible {
@@ -31,10 +31,10 @@
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(14px);
   transition:
-    opacity 0.8s var(--ease-smooth),
-    transform 0.8s var(--ease-smooth);
+    opacity 0.5s var(--ease-smooth),
+    transform 0.5s var(--ease-smooth);
 }
 
 .reveal-right.is-visible {
@@ -45,10 +45,10 @@
 /* ── Stagger children ───────────────────────────────── */
 .stagger > * {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(14px);
   transition:
-    opacity 0.7s var(--ease-smooth),
-    transform 0.7s var(--ease-smooth);
+    opacity 0.5s var(--ease-smooth),
+    transform 0.5s var(--ease-smooth);
 }
 
 .stagger > *.is-visible {
@@ -66,13 +66,13 @@
 
 /* ── Hero card entrance (subtle scale) ──────────────── */
 .hero-card-entrance {
-  animation: cardRise 1s var(--ease-smooth) both;
+  animation: cardRise 0.8s var(--ease-smooth) both;
 }
 
 @keyframes cardRise {
   from {
     opacity: 0;
-    transform: translateY(30px) scale(0.97);
+    transform: translateY(20px) scale(0.98);
   }
   to {
     opacity: 1;

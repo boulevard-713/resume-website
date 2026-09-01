@@ -2,34 +2,46 @@
    BASE — Reset, Variables, Typography, Glass System
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Noto+Serif+SC:wght@400;600&display=swap');
 
 :root {
   /* ── Dark theme ── */
-  --bg:         #0c1016;
-  --bg-warm:    #11161d;
+  --bg:         #0b0e13;
+  --bg-warm:    #11151c;
 
-  --glass-light:  rgba(255,255,255, 0.035);
-  --glass-medium: rgba(255,255,255, 0.055);
-  --glass-heavy:  rgba(255,255,255, 0.085);
-  --glass-border:        rgba(255,255,255, 0.08);
-  --glass-border-hover:  rgba(255,255,255, 0.15);
+  --glass-light:  rgba(255,255,255, 0.04);
+  --glass-medium: rgba(255,255,255, 0.065);
+  --glass-heavy:  rgba(255,255,255, 0.095);
+  --glass-border:        rgba(255,255,255, 0.10);
+  --glass-border-hover:  rgba(216,162,74, 0.35);
 
-  --text-primary:    #e4e8ee;
-  --text-secondary:  #8892a0;
-  --text-tertiary:   #5a6475;
+  --text-primary:    #ece7dd;
+  --text-secondary:  #9aa2ad;
+  --text-tertiary:   #626c7a;
 
-  --accent:        #5e9ed6;
-  --accent-light:  #7bc8e8;
-  --accent-purple: #b8adf2;
-  --accent-cyan:   #5eeadb;
+  /* ── Single focal colour: brass / amber ── */
+  --signal:        #d8a24a;
+  --signal-light:  #e8bd7c;
+  --signal-dim:    rgba(216,162,74, 0.14);
 
-  --glass-shadow:       none;
-  --glass-shadow-hover: 0 16px 48px rgba(0,0,0,0.40);
+  /* Legacy accent names repointed to the signal family so nothing clashes */
+  --accent:        #d8a24a;
+  --accent-light:  #e8bd7c;
+  --accent-purple: #d8a24a;
+  --accent-cyan:   #e8bd7c;
+
+  --glass-shadow:       0 1px 0 rgba(255,255,255,0.05) inset,
+                        0 20px 40px -26px rgba(0,0,0,0.75);
+  --glass-shadow-hover: 0 1px 0 rgba(255,255,255,0.09) inset,
+                        0 30px 60px -22px rgba(0,0,0,0.80);
 
   --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+
+  --font-display: 'Newsreader', 'Noto Serif SC', Georgia, 'Times New Roman', serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
 
   --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -42,13 +54,17 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text-primary);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-               'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  font-family: var(--font-body);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--signal);
+  color: #1a1206;
 }
 
 /* ── Glass System ────────────────────────────────────── */
@@ -93,35 +109,72 @@ body {
 .wrapper {
   position: relative;
   z-index: 2;
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
+.wrapper--wide { max-width: 1180px; }
+
 section {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding: 80px 0;
+  padding: clamp(96px, 15vh, 176px) 0;
 }
 
-/* ── Section Labels ──────────────────────────────────── */
+/* ── Section header (editorial: index + label + serif title) ── */
+.section-index {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: var(--signal);
+  margin-bottom: 20px;
+}
+
+.section-index::after {
+  content: '';
+  display: inline-block;
+  width: 56px;
+  height: 1px;
+  vertical-align: middle;
+  margin-left: 16px;
+  background: linear-gradient(90deg, var(--signal), transparent);
+}
+
 .section-label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 12px;
+  color: var(--text-tertiary);
+  margin-bottom: 10px;
 }
 
 .section-title {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  font-family: var(--font-display);
+  font-size: clamp(34px, 5vw, 52px);
+  font-weight: 400;
+  letter-spacing: -0.015em;
   color: var(--text-primary);
-  margin-bottom: 48px;
-  line-height: 1.2;
+  margin-bottom: 56px;
+  line-height: 1.12;
+}
+
+/* ── Reduced motion ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal, .reveal-left, .reveal-right, .stagger > *, .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
