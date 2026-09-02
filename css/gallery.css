@@ -9,9 +9,11 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* push one row toward the top, the other toward the bottom,
+     leaving a clear band in the middle for the name card */
+  justify-content: space-between;
   gap: 18px;
-  padding: 40px 0;
+  padding: 8vh 0;
 }
 
 .gallery-row {
@@ -85,7 +87,7 @@
     height: 140px;
   }
   .gallery-row { gap: 12px; }
-  .hero-gallery { gap: 12px; padding: 20px 0; }
+  .hero-gallery { gap: 12px; padding: 5vh 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
