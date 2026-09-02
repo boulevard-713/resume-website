@@ -13,7 +13,7 @@
      leaving a clear band in the middle for the name card */
   justify-content: space-between;
   gap: 18px;
-  padding: 8vh 0;
+  padding: 10vh 0;
 }
 
 .gallery-row {

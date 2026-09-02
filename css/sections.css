@@ -16,7 +16,7 @@
 
 .hero-card {
   display: inline-block;
-  padding: 52px 60px;
+  padding: 30px 56px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -45,7 +45,7 @@
   display: block;
   width: 64px;
   height: 2px;
-  margin: 22px auto 0;
+  margin: 16px auto 0;
   background: var(--signal);
 }
 
@@ -55,7 +55,7 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .hero-scroll-hint {
@@ -504,7 +504,7 @@
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 768px) {
   .wrapper { padding: 0 22px; }
-  .hero-card { padding: 40px 30px; }
+  .hero-card { padding: 24px 26px; }
   .section-title { margin-bottom: 36px; }
   .section-index::after { width: 32px; margin-left: 12px; }
   .vision-glass::before { font-size: 80px; }
