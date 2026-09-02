@@ -44,8 +44,31 @@
   font-size: clamp(48px, 9vw, 94px);
   font-weight: 400;
   letter-spacing: -0.02em;
-  color: #f3eee3;
   line-height: 1.08;
+
+  /* flowing light sweep across the letters */
+  color: #f3eee3;
+  background-image: linear-gradient(
+    100deg,
+    #efe9dd 0%,
+    #efe9dd 38%,
+    var(--signal-light) 46%,
+    #fff8ec 50%,
+    var(--signal-light) 54%,
+    #efe9dd 62%,
+    #efe9dd 100%
+  );
+  background-size: 250% 100%;
+  background-position: 150% 0;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: nameShimmer 6.5s var(--ease-smooth) infinite;
+}
+
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero-name { -webkit-text-fill-color: currentColor; }
 }
 
 .hero-name::after {

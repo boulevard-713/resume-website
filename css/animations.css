@@ -64,6 +64,21 @@
 
 .fade-in.is-visible { opacity: 1; }
 
+/* ── Hero name — flowing light sweep ────────────────── */
+@keyframes nameShimmer {
+  0%   { background-position: 150% 0; }
+  55%  { background-position: -50% 0; }
+  100% { background-position: -50% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-name {
+    animation: none !important;
+    background-image: none !important;
+    -webkit-text-fill-color: #f3eee3 !important;
+  }
+}
+
 /* ── Hero card entrance (subtle scale) ──────────────── */
 .hero-card-entrance {
   animation: cardRise 0.8s var(--ease-smooth) both;
