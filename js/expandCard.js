@@ -34,17 +34,17 @@
       icon: '🏆',
       en: {
         title: 'China International College Students’ Innovation Competition',
-        subtitle: 'Singapore Regional · Silver Award',
-        body: "<p>As a core team member in the 2025 China International College Students’ Innovation Competition, our project focused on the technical development and commercial validation of a novel early-detection method for diabetes.</p>"
-            + "<p><strong>My Role:</strong> Responsible for technical proposal writing and result presentation. Participated in the engineering validation of the detection device, and produced the full pitch deck and demo materials.</p>"
-            + "<p><strong>Singapore Regional:</strong> Competing against teams from top universities across Asia, our pitch deck and business plan received praise from judges as “combining engineering feasibility with business logic,” and we ultimately won a Silver Award at the Singapore regional round. This experience was my first systematic reflection on “how technology becomes value,” and a key reason I later decided to pursue the Digital Intelligence Organization micro-minor and move toward a product management career.</p>"
+        subtitle: 'Singapore Regional · Silver Award · Team Member',
+        body: "<p>Joined a senior student’s team for the 2025 China International College Students’ Innovation Competition as a team member. The project focused on a novel early-detection method for diabetes.</p>"
+            + "<p><strong>My Role:</strong> Designed the presentation deck and visual materials used for the pitch.</p>"
+            + "<p><strong>Singapore Regional:</strong> The team competed against entries from top universities across Asia and won a Silver Award at the Singapore regional round. Watching how the pitch translated technical work into a business case was a big part of why I later decided to pursue the Digital Intelligence Organization micro-minor.</p>"
       },
       zh: {
         title: '中国国际大学生创新大赛',
-        subtitle: '新加坡区域赛 · 银奖',
-        body: "<p>作为团队核心成员参加 2025 年中国国际大学生创新大赛，项目聚焦于糖尿病的新型早期检测方式的技术落地与商业化验证。</p>"
-            + "<p>【我的角色】负责技术方案撰写与成果展示。参与对检测设备的工程技术方面验证，制作了全套路演 PPT 与演示物料。</p>"
-            + "<p>【新加坡区域赛】面对来自亚洲多所顶尖高校的竞争团队，我们制作的路演 PPT 以及商业计划书获得了评委“工程可行性与商业逻辑兼备”的评价，最终斩获新加坡区域赛银奖。这次经历让我第一次系统性地思考“技术如何转化为价值”，也是我后来决定辅修数智组织微专业、走向产品经理方向的重要契机。</p>"
+        subtitle: '新加坡区域赛 · 银奖 · 团队成员',
+        body: "<p>以团队成员身份加入学长主导的 2025 年中国国际大学生创新大赛项目，项目聚焦于糖尿病的新型早期检测方式。</p>"
+            + "<p>【我的角色】负责路演所用的 PPT 与视觉材料设计。</p>"
+            + "<p>【新加坡区域赛】团队与来自亚洲多所顶尖高校的团队同场竞技，最终获得新加坡区域赛银奖。看到技术方案如何被转化成商业路演，也是我后来决定辅修数智组织微专业的重要原因之一。</p>"
       }
     },
 
@@ -161,19 +161,19 @@
         title: 'Linde APAC',
         subtitle: 'Commercial Department · Jul – Aug 2026',
         body: "<p>Completed a summer internship in the Commercial Department of Linde APAC, where I worked at the intersection of business operations and digital technology within a global industrial gases company.</p>"
-            + "<p><strong>Internal Digitalization:</strong> Supported the company’s internal digitalization initiatives, helping digitize and streamline business workflows and documentation to improve efficiency across the commercial team.</p>"
-            + "<p><strong>Contract Review Agent:</strong> Assisted in building a contract-review agent using Microsoft 365 Copilot, contributing to requirement analysis, prompt design, knowledge-base setup, and testing to help the team review contracts more efficiently.</p>"
-            + "<p><strong>Compressor Market Research:</strong> Produced a compressor market research report, collecting and analyzing market data, competitor information, and industry trends to support commercial decision-making.</p>"
-            + "<p>This experience connected my engineering background with real commercial workflows, giving me hands-on exposure to how AI and data are applied in business operations.</p>"
+            + "<p><strong>Compressor Market Research:</strong> On my own initiative, researched the air-separation compressor market — gathering competitor data from public sources and using AI tools to turn it into a market research report for the commercial team.</p>"
+            + "<p><strong>Contract-Review Agent (Prototype):</strong> Built a prototype contract-review agent using Microsoft 365 Copilot, covering requirement analysis, prompt design, and knowledge-base setup. The prototype fell short of the accuracy the team needed and was not deployed — a useful lesson in where off-the-shelf LLM tooling breaks down on domain-specific documents.</p>"
+            + "<p><strong>Testing &amp; Translation:</strong> Also tested another team’s AI agent and proofread contract translations.</p>"
+            + "<p>This experience connected my engineering background with real commercial workflows — and I learned as much from what didn’t work as from what did.</p>"
       },
       zh: {
         title: 'Linde APAC',
         subtitle: '商务部 · 2026 年 7 – 8 月',
         body: "<p>在 Linde APAC 商务部完成暑期实习，在一家全球工业气体企业里，将商业运营与数字技术相结合。</p>"
-            + "<p>【内部数字化】支持公司内部数字化建设，协助梳理并优化业务流程与文档，提升商业团队工作效率。</p>"
-            + "<p>【合同审查 Agent】协助搭建基于 Microsoft 365 Copilot 的合同审查 agent，参与需求分析、提示词设计、知识库搭建与测试，帮助团队更高效地审查合同。</p>"
-            + "<p>【压缩机市场调研】制作压缩机市场调研报告，收集并分析市场数据、竞品信息与行业趋势，为商业决策提供支持。</p>"
-            + "<p>这段经历将我的工程背景与真实的商业流程连接起来，让我亲身体验了 AI 与数据如何落地到商业运营中。</p>"
+            + "<p>【压缩机市场调研】自主完成空分压缩机市场调研，从公开渠道收集各厂商数据，借助 AI 工具整理成一份市场研究报告，供商业团队参考。</p>"
+            + "<p>【合同审查 Agent（原型）】搭建了一个用于合同审核的 Microsoft 365 Copilot 智能体原型，参与需求分析、提示词设计与知识库搭建。原型效果未达到团队所需的准确度，最终未上线——这让我直观理解了通用大模型工具在处理专业文档时的局限。</p>"
+            + "<p>【测试与翻译】此外参与测试另一团队开发的 AI 智能体，并负责合同翻译校对。</p>"
+            + "<p>这段经历将我的工程背景与真实的商业流程连接起来——没成功的部分，教会我的并不比成功的部分少。</p>"
       }
     }
   };
@@ -231,7 +231,7 @@
   });
 
   // ── Attach click to each timeline card ───────────────
-  var cards = document.querySelectorAll('.timeline-card');
+  var cards = document.querySelectorAll('.timeline-card[data-detail]');
   cards.forEach(function(card) {
     card.style.cursor = 'pointer';
     card.addEventListener('click', function() {
